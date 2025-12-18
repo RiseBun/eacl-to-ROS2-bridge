@@ -1,0 +1,24 @@
+[0.445s] Invoking command in '/home/li/vk_ros2_ws/build/my_rtabmap_launch': PYTHONPATH=/home/li/vk_ros2_ws/build/my_rtabmap_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/li/vk_ros2_ws/build/my_rtabmap_launch/build --no-deps symlink_data
+[0.620s] running develop
+[0.730s] running egg_info
+[0.730s] creating my_rtabmap_launch.egg-info
+[0.730s] writing my_rtabmap_launch.egg-info/PKG-INFO
+[0.731s] writing dependency_links to my_rtabmap_launch.egg-info/dependency_links.txt
+[0.731s] writing entry points to my_rtabmap_launch.egg-info/entry_points.txt
+[0.731s] writing requirements to my_rtabmap_launch.egg-info/requires.txt
+[0.731s] writing top-level names to my_rtabmap_launch.egg-info/top_level.txt
+[0.731s] writing manifest file 'my_rtabmap_launch.egg-info/SOURCES.txt'
+[0.732s] reading manifest file 'my_rtabmap_launch.egg-info/SOURCES.txt'
+[0.732s] writing manifest file 'my_rtabmap_launch.egg-info/SOURCES.txt'
+[0.733s] running build_ext
+[0.733s] Creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/python3.10/site-packages/my-rtabmap-launch.egg-link (link to .)
+[0.734s] Installing odom_to_tf_node script to /home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/my_rtabmap_launch
+[0.734s] 
+[0.734s] Installed /home/li/vk_ros2_ws/build/my_rtabmap_launch
+[0.734s] running symlink_data
+[0.734s] creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index
+[0.734s] creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index/resource_index
+[0.734s] creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index/resource_index/packages
+[0.734s] symbolically linking /home/li/vk_ros2_ws/build/my_rtabmap_launch/resource/my_rtabmap_launch -> /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index/resource_index/packages
+[0.735s] symbolically linking /home/li/vk_ros2_ws/build/my_rtabmap_launch/package.xml -> /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/my_rtabmap_launch
+[0.757s] Invoked command in '/home/li/vk_ros2_ws/build/my_rtabmap_launch' returned '0': PYTHONPATH=/home/li/vk_ros2_ws/build/my_rtabmap_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/li/vk_ros2_ws/build/my_rtabmap_launch/build --no-deps symlink_data

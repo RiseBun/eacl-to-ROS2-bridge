@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/dependency_links.txt
+writing entry points to ../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/entry_points.txt
+writing requirements to ../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/requires.txt
+writing top-level names to ../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/top_level.txt
+reading manifest file '../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/rtabmap_dual_rgbd_backend_final.launch.py -> /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/my_rtabmap_launch/launch
+running install_egg_info
+removing '/home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/python3.10/site-packages/my_rtabmap_launch-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/my_rtabmap_launch/my_rtabmap_launch.egg-info to /home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/python3.10/site-packages/my_rtabmap_launch-0.0.0-py3.10.egg-info
+running install_scripts
+Installing odom_to_tf_node script to /home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/my_rtabmap_launch
+writing list of installed files to '/home/li/vk_ros2_ws/build/my_rtabmap_launch/install.log'

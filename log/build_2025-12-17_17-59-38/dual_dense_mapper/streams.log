@@ -1,0 +1,124 @@
+[0.009s] Invoking command in '/home/li/vk_ros2_ws/build/dual_dense_mapper': /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.204s] -- Detecting C compiler ABI info - done
+[0.215s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.215s] -- Detecting C compile features
+[0.215s] -- Detecting C compile features - done
+[0.220s] -- Detecting CXX compiler ABI info
+[0.355s] -- Detecting CXX compiler ABI info - done
+[0.361s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.361s] -- Detecting CXX compile features
+[0.361s] -- Detecting CXX compile features - done
+[0.365s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.510s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.582s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.617s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.622s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.628s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.638s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.651s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.687s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.689s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.798s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.829s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.861s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.868s] -- Looking for pthread.h
+[0.940s] -- Looking for pthread.h - found
+[0.941s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.074s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.076s] -- Found Threads: TRUE  
+[1.116s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.138s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[1.146s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.213s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.224s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.225s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.225s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.228s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.257s] -- Checking for module 'eigen3'
+[1.273s] --   Found eigen3, version 3.4.0
+[1.358s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.359s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.398s] -- Checking for module 'flann'
+[1.414s] --   Found flann, version 1.9.1
+[1.493s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.493s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.734s] -- Checking for module 'libusb-1.0'
+[2.759s] --   Found libusb-1.0, version 1.0.25
+[2.815s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.817s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.910s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.041s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.046s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.051s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.173s] -- Found Qhull version 8.0.2
+[3.283s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.396s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.397s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.397s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.398s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.398s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.399s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.399s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.399s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.400s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.401s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.401s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.402s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.403s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.403s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.404s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.405s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.405s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.406s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.406s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.407s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.408s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.408s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.408s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.409s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.409s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.412s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[3.475s] Error parsing '/home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml':
+[3.502s] Traceback (most recent call last):
+[3.502s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[3.502s]     root = dom.parseString(data)
+[3.502s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString
+[3.503s]     return expatbuilder.parseString(string)
+[3.503s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[3.503s]     return builder.parseString(string)
+[3.503s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[3.503s]     parser.Parse(string, True)
+[3.503s] xml.parsers.expat.ExpatError: not well-formed (invalid token): line 5, column 52
+[3.503s] 
+[3.503s] During handling of the above exception, another exception occurred:
+[3.503s] 
+[3.503s] Traceback (most recent call last):
+[3.503s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.503s]     main()
+[3.503s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.504s]     raise e
+[3.504s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.504s]     package = parse_package_string(
+[3.504s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[3.504s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[3.504s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml':
+[3.504s] The manifest contains invalid XML:
+[3.504s] not well-formed (invalid token): line 5, column 52
+[3.514s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.515s]   execute_process(/usr/bin/python3
+[3.515s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.515s]   /home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml
+[3.515s]   /home/li/vk_ros2_ws/build/dual_dense_mapper/ament_cmake_core/package.cmake)
+[3.515s]   returned error code 1
+[3.515s] Call Stack (most recent call first):
+[3.515s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.515s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[3.515s]   CMakeLists.txt:31 (ament_package)
+[3.515s] 
+[3.515s] [0m
+[3.515s] -- Configuring incomplete, errors occurred!
+[3.516s] See also "/home/li/vk_ros2_ws/build/dual_dense_mapper/CMakeFiles/CMakeOutput.log".
+[3.532s] Invoked command in '/home/li/vk_ros2_ws/build/dual_dense_mapper' returned '1': /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper

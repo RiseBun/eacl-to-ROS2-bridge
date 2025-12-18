@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating my_rtabmap_launch.egg-info
+writing my_rtabmap_launch.egg-info/PKG-INFO
+writing dependency_links to my_rtabmap_launch.egg-info/dependency_links.txt
+writing entry points to my_rtabmap_launch.egg-info/entry_points.txt
+writing requirements to my_rtabmap_launch.egg-info/requires.txt
+writing top-level names to my_rtabmap_launch.egg-info/top_level.txt
+writing manifest file 'my_rtabmap_launch.egg-info/SOURCES.txt'
+reading manifest file 'my_rtabmap_launch.egg-info/SOURCES.txt'
+writing manifest file 'my_rtabmap_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/python3.10/site-packages/my-rtabmap-launch.egg-link (link to .)
+Installing odom_to_tf_node script to /home/li/vk_ros2_ws/install/my_rtabmap_launch/lib/my_rtabmap_launch
+
+Installed /home/li/vk_ros2_ws/build/my_rtabmap_launch
+running symlink_data
+creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index
+creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index/resource_index
+creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index/resource_index/packages
+symbolically linking /home/li/vk_ros2_ws/build/my_rtabmap_launch/resource/my_rtabmap_launch -> /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/ament_index/resource_index/packages
+symbolically linking /home/li/vk_ros2_ws/build/my_rtabmap_launch/package.xml -> /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/my_rtabmap_launch
+creating /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/my_rtabmap_launch/launch
+symbolically linking /home/li/vk_ros2_ws/build/my_rtabmap_launch/launch/rtabmap_dual_rgbd_backend_final.launch.py -> /home/li/vk_ros2_ws/install/my_rtabmap_launch/share/my_rtabmap_launch/launch

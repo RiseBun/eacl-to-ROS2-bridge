@@ -1,0 +1,4 @@
+[0.010s] Invoking command in '/home/li/vk_ros2_ws/build/vk_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/vk_ros2_ws/install/my_rtabmap_launch:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake /home/li/vk_ros2_ws/src/vk_ros2_driver - -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/vk_ros2_driver
+[0.014s] [0mCMake Error: Unknown argument -[0m
+[0.014s] [0mCMake Error: Run 'cmake --help' for all supported options.[0m
+[0.015s] Invoked command in '/home/li/vk_ros2_ws/build/vk_ros2_driver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/vk_ros2_ws/install/my_rtabmap_launch:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake /home/li/vk_ros2_ws/src/vk_ros2_driver - -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/vk_ros2_driver

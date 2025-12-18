@@ -1,0 +1,91 @@
+[0.010s] Invoking command in '/home/li/vk_ros2_ws/build/vk_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/li/vk_ros2_ws/src/vk_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/vk_ros2_driver
+[0.076s] -- The C compiler identification is GNU 11.4.0
+[0.125s] -- The CXX compiler identification is GNU 11.4.0
+[0.130s] -- Detecting C compiler ABI info
+[0.198s] -- Detecting C compiler ABI info - done
+[0.203s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.203s] -- Detecting C compile features
+[0.203s] -- Detecting C compile features - done
+[0.206s] -- Detecting CXX compiler ABI info
+[0.281s] -- Detecting CXX compiler ABI info - done
+[0.286s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.286s] -- Detecting CXX compile features
+[0.287s] -- Detecting CXX compile features - done
+[0.295s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.420s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.513s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.565s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.570s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.580s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.595s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.614s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.672s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.675s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.761s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.783s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.823s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.833s] -- Looking for pthread.h
+[0.898s] -- Looking for pthread.h - found
+[0.898s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.972s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.973s] -- Found Threads: TRUE  
+[1.048s] -- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.089s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.105s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.127s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.148s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[1.153s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.223s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.240s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.242s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.242s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.245s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.255s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[1.285s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.288s] -- Found stereo_msgs: 4.9.0 (/opt/ros/humble/share/stereo_msgs/cmake)
+[1.307s] -- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+[1.375s] -- Configuring done
+[1.389s] -- Generating done
+[1.393s] -- Build files have been written to: /home/li/vk_ros2_ws/build/vk_ros2_driver
+[1.402s] Invoked command in '/home/li/vk_ros2_ws/build/vk_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/li/vk_ros2_ws/src/vk_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/vk_ros2_driver
+[1.405s] Invoking command in '/home/li/vk_ros2_ws/build/vk_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/li/vk_ros2_ws/build/vk_ros2_driver -- -j20 -l20
+[1.452s] [ 25%] [32mBuilding CXX object CMakeFiles/vk_ros2_driver_node.dir/rclcpp_components/node_main_vk_ros2_driver_node.cpp.o[0m
+[1.453s] [ 50%] [32mBuilding CXX object CMakeFiles/vk_ros2_driver.dir/src/vk_ros2_driver.cpp.o[0m
+[3.511s] [ 75%] [32m[1mLinking CXX executable vk_ros2_driver_node[0m
+[3.644s] [ 75%] Built target vk_ros2_driver_node
+[8.994s] [100%] [32m[1mLinking CXX shared library libvk_ros2_driver.so[0m
+[9.381s] [100%] Built target vk_ros2_driver
+[9.391s] Invoked command in '/home/li/vk_ros2_ws/build/vk_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/li/vk_ros2_ws/build/vk_ros2_driver -- -j20 -l20
+[9.402s] Invoking command in '/home/li/vk_ros2_ws/build/vk_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/li/vk_ros2_ws/build/vk_ros2_driver
+[9.408s] -- Install configuration: ""
+[9.408s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/lib/vk_ros2_driver/vk_ros2_driver_node
+[9.408s] -- Set runtime path of "/home/li/vk_ros2_ws/install/vk_ros2_driver/lib/vk_ros2_driver/vk_ros2_driver_node" to ""
+[9.408s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver
+[9.408s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver/vk_ros2_driver
+[9.408s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver/vk_ros2_driver/vk_ros2_driver.hpp
+[9.408s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/lib/libvk_ros2_driver.so
+[9.411s] -- Set runtime path of "/home/li/vk_ros2_ws/install/vk_ros2_driver/lib/libvk_ros2_driver.so" to "/opt/vilota/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"
+[9.411s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch
+[9.411s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/example.launch.py
+[9.411s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/__pycache__
+[9.411s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/__pycache__/loop_closure_and_tsdf.launch.cpython-310.pyc
+[9.412s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/config
+[9.412s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/config/example.yaml
+[9.412s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/package_run_dependencies/vk_ros2_driver
+[9.412s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/parent_prefix_path/vk_ros2_driver
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/ament_prefix_path.sh
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/ament_prefix_path.dsv
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/path.sh
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/path.dsv
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.bash
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.sh
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.zsh
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.dsv
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/package.dsv
+[9.413s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/packages/vk_ros2_driver
+[9.414s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/rclcpp_components/vk_ros2_driver
+[9.414s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.414s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/vk_ros2_driverConfig.cmake
+[9.414s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/vk_ros2_driverConfig-version.cmake
+[9.414s] -- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/package.xml
+[9.415s] Invoked command in '/home/li/vk_ros2_ws/build/vk_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/li/vk_ros2_ws/build/vk_ros2_driver

@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target vk_ros2_driver_node[0m
+[35m[1mConsolidate compiler generated dependencies of target vk_ros2_driver[0m
+[ 50%] Built target vk_ros2_driver_node
+[ 75%] [32mBuilding CXX object CMakeFiles/vk_ros2_driver.dir/src/vk_ros2_driver.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libvk_ros2_driver.so[0m
+[100%] Built target vk_ros2_driver
+-- Install configuration: ""
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/lib/vk_ros2_driver/vk_ros2_driver_node
+-- Set runtime path of "/home/li/vk_ros2_ws/install/vk_ros2_driver/lib/vk_ros2_driver/vk_ros2_driver_node" to ""
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver/vk_ros2_driver
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver/vk_ros2_driver/vk_ros2_driver.hpp
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/lib/libvk_ros2_driver.so
+-- Set runtime path of "/home/li/vk_ros2_ws/install/vk_ros2_driver/lib/libvk_ros2_driver.so" to "/opt/vilota/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/example.launch.py
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/__pycache__
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/__pycache__/loop_closure_and_tsdf.launch.cpython-310.pyc
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/config
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/config/example.yaml
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/package_run_dependencies/vk_ros2_driver
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/parent_prefix_path/vk_ros2_driver
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/ament_prefix_path.sh
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/path.sh
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/path.dsv
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.bash
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.sh
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.zsh
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.dsv
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/package.dsv
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/packages/vk_ros2_driver
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/rclcpp_components/vk_ros2_driver
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/vk_ros2_driverConfig.cmake
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/vk_ros2_driverConfig-version.cmake
+-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/package.xml

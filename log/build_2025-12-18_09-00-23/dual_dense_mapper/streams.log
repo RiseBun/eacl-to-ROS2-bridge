@@ -1,0 +1,115 @@
+[0.009s] Invoking command in '/home/li/vk_ros2_ws/build/dual_dense_mapper': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.098s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.187s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.187s] -- Detecting C compile features
+[0.187s] -- Detecting C compile features - done
+[0.190s] -- Detecting CXX compiler ABI info
+[0.280s] -- Detecting CXX compiler ABI info - done
+[0.287s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.287s] -- Detecting CXX compile features
+[0.287s] -- Detecting CXX compile features - done
+[0.290s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.414s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.462s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.500s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.536s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.541s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.549s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.561s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.575s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.611s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.613s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.711s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.732s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.762s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.769s] -- Looking for pthread.h
+[0.840s] -- Looking for pthread.h - found
+[0.841s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.933s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.934s] -- Found Threads: TRUE  
+[0.976s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.998s] -- Found message_filters: 4.3.11 (/opt/ros/humble/share/message_filters/cmake)
+[1.001s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[1.009s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.080s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.099s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.100s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.100s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.103s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.132s] -- Checking for module 'eigen3'
+[1.147s] --   Found eigen3, version 3.4.0
+[1.184s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.184s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.216s] -- Checking for module 'flann'
+[1.233s] --   Found flann, version 1.9.1
+[1.281s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.281s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.165s] -- Checking for module 'libusb-1.0'
+[2.180s] --   Found libusb-1.0, version 1.0.25
+[2.217s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.218s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.275s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.422s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.429s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.437s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.568s] -- Found Qhull version 8.0.2
+[2.699s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.834s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.835s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.835s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.836s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.837s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.837s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.837s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.838s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.838s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.839s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.840s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.840s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.841s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.842s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.842s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.843s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.843s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.844s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.845s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.845s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.846s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.846s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.846s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.847s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.848s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.850s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.944s] -- Configuring done
+[2.976s] -- Generating done
+[2.983s] -- Build files have been written to: /home/li/vk_ros2_ws/build/dual_dense_mapper
+[2.997s] Invoked command in '/home/li/vk_ros2_ws/build/dual_dense_mapper' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper
+[2.998s] Invoking command in '/home/li/vk_ros2_ws/build/dual_dense_mapper': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake --build /home/li/vk_ros2_ws/build/dual_dense_mapper -- -j20 -l20
+[3.060s] [ 50%] [32mBuilding CXX object CMakeFiles/dual_dense_mapper_node.dir/src/dual_dense_mapper.cpp.o[0m
+[17.782s] [100%] [32m[1mLinking CXX executable dual_dense_mapper_node[0m
+[18.993s] [100%] Built target dual_dense_mapper_node
+[19.003s] Invoked command in '/home/li/vk_ros2_ws/build/dual_dense_mapper' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake --build /home/li/vk_ros2_ws/build/dual_dense_mapper -- -j20 -l20
+[19.004s] Invoking command in '/home/li/vk_ros2_ws/build/dual_dense_mapper': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake --install /home/li/vk_ros2_ws/build/dual_dense_mapper
+[19.009s] -- Install configuration: ""
+[19.010s] -- Execute custom install script
+[19.010s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/lib/dual_dense_mapper/dual_dense_mapper_node
+[19.018s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/launch/dual_dense_mapper.launch.py
+[19.026s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/ament_index/resource_index/package_run_dependencies/dual_dense_mapper
+[19.033s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/ament_index/resource_index/parent_prefix_path/dual_dense_mapper
+[19.041s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/environment/ament_prefix_path.sh
+[19.048s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/environment/ament_prefix_path.dsv
+[19.056s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/environment/path.sh
+[19.063s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/environment/path.dsv
+[19.069s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/local_setup.bash
+[19.077s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/local_setup.sh
+[19.084s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/local_setup.zsh
+[19.090s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/local_setup.dsv
+[19.096s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/package.dsv
+[19.104s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/ament_index/resource_index/packages/dual_dense_mapper
+[19.112s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/cmake/dual_dense_mapperConfig.cmake
+[19.119s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/cmake/dual_dense_mapperConfig-version.cmake
+[19.126s] -- Symlinking: /home/li/vk_ros2_ws/install/dual_dense_mapper/share/dual_dense_mapper/package.xml
+[19.140s] Invoked command in '/home/li/vk_ros2_ws/build/dual_dense_mapper' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/li/rtabmap_ws/install/rtabmap_python:/opt/ros/humble /usr/bin/cmake --install /home/li/vk_ros2_ws/build/dual_dense_mapper

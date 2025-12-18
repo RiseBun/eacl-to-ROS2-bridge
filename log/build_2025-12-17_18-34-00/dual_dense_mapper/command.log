@@ -1,0 +1,2 @@
+Invoking command in '/home/li/vk_ros2_ws/build/dual_dense_mapper': /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper
+Invoked command in '/home/li/vk_ros2_ws/build/dual_dense_mapper' returned '1': /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper

@@ -1,0 +1,118 @@
+[0.011s] Invoking command in '/home/li/vk_ros2_ws/build/dual_dense_mapper': /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper
+[0.120s] -- The C compiler identification is GNU 11.4.0
+[0.176s] -- The CXX compiler identification is GNU 11.4.0
+[0.186s] -- Detecting C compiler ABI info
+[0.255s] -- Detecting C compiler ABI info - done
+[0.263s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.263s] -- Detecting C compile features
+[0.264s] -- Detecting C compile features - done
+[0.268s] -- Detecting CXX compiler ABI info
+[0.366s] -- Detecting CXX compiler ABI info - done
+[0.372s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.372s] -- Detecting CXX compile features
+[0.372s] -- Detecting CXX compile features - done
+[0.383s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.548s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.682s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.740s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.746s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.756s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.772s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.857s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.864s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.980s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.014s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.053s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.068s] -- Looking for pthread.h
+[1.175s] -- Looking for pthread.h - found
+[1.176s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.271s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.272s] -- Found Threads: TRUE  
+[1.384s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.421s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[1.437s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.555s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.571s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.572s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.572s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.575s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.610s] -- Checking for module 'eigen3'
+[1.628s] --   Found eigen3, version 3.4.0
+[1.676s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.676s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.751s] -- Checking for module 'flann'
+[1.772s] --   Found flann, version 1.9.1
+[1.840s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.840s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.148s] -- Checking for module 'libusb-1.0'
+[3.171s] --   Found libusb-1.0, version 1.0.25
+[3.226s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.228s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.310s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.459s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.465s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.472s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.587s] -- Found Qhull version 8.0.2
+[3.704s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.819s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.820s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.820s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.822s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.823s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.823s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.824s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.824s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.824s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.825s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.826s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.826s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.827s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.827s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.828s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.829s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.829s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.830s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.831s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.831s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.832s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.832s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.833s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.833s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.834s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.838s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[3.907s] Error parsing '/home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml':
+[3.947s] Traceback (most recent call last):
+[3.947s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.947s]     main()
+[3.947s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.947s]     raise e
+[3.947s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.947s]     package = parse_package_string(
+[3.947s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[3.947s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[3.947s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml':
+[3.947s] Error(s):
+[3.947s] - The generic dependency on 'rclcpp' is redundant with: build_depend, build_export_depend, exec_depend
+[3.947s] - The generic dependency on 'sensor_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[3.948s] - The generic dependency on 'tf2' is redundant with: build_depend, build_export_depend, exec_depend
+[3.948s] - The generic dependency on 'tf2_ros' is redundant with: build_depend, build_export_depend, exec_depend
+[3.948s] - The generic dependency on 'tf2_geometry_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[3.948s] - The generic dependency on 'message_filters' is redundant with: build_depend, build_export_depend, exec_depend
+[3.948s] - The generic dependency on 'pcl_conversions' is redundant with: build_depend, build_export_depend, exec_depend
+[3.948s] - The generic dependency on 'pcl_ros' is redundant with: build_depend, build_export_depend, exec_depend
+[3.964s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.964s]   execute_process(/usr/bin/python3
+[3.964s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.964s]   /home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml
+[3.964s]   /home/li/vk_ros2_ws/build/dual_dense_mapper/ament_cmake_core/package.cmake)
+[3.964s]   returned error code 1
+[3.964s] Call Stack (most recent call first):
+[3.964s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.964s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[3.965s]   CMakeLists.txt:31 (ament_package)
+[3.965s] 
+[3.965s] [0m
+[3.965s] -- Configuring incomplete, errors occurred!
+[3.965s] See also "/home/li/vk_ros2_ws/build/dual_dense_mapper/CMakeFiles/CMakeOutput.log".
+[3.980s] Invoked command in '/home/li/vk_ros2_ws/build/dual_dense_mapper' returned '1': /usr/bin/cmake /home/li/vk_ros2_ws/src/dual_dense_mapper -DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper

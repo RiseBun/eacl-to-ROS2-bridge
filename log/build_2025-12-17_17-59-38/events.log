@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000225] (-) JobUnselected: {'identifier': 'vk_ros2_driver'}
+[0.000262] (dual_dense_mapper) JobQueued: {'identifier': 'dual_dense_mapper', 'dependencies': OrderedDict()}
+[0.000292] (dual_dense_mapper) JobStarted: {'identifier': 'dual_dense_mapper'}
+[0.006436] (dual_dense_mapper) JobProgress: {'identifier': 'dual_dense_mapper', 'progress': 'cmake'}
+[0.006987] (dual_dense_mapper) Command: {'cmd': ['/usr/bin/cmake', '/home/li/vk_ros2_ws/src/dual_dense_mapper', '-DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/dual_dense_mapper'], 'cwd': '/home/li/vk_ros2_ws/build/dual_dense_mapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'li'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/li/rtabmap_ws/install/rtabmap_slam/lib:/home/li/rtabmap_ws/install/rtabmap_odom/lib:/home/li/rtabmap_ws/install/rtabmap_util/lib:/home/li/rtabmap_ws/install/rtabmap_sync/lib:/home/li/rtabmap_ws/install/rtabmap_rviz_plugins/lib:/home/li/rtabmap_ws/install/rtabmap_conversions/lib:/home/li/rtabmap_ws/install/rtabmap_msgs/lib:/home/li/rtabmap_ws/install/rtabmap_costmap_plugins/lib:/home/li/rtabmap_ws/install/rtabmap/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/li'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/li'), ('TERM_PROGRAM_VERSION', '1.106.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1910'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2235'), ('BUNDLED_DEBUGPY_PATH', '/home/li/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/li/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6598'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/li/rtabmap_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'li'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:15690'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/li/rtabmap_ws/install/rtabmap/lib/x86_64-linux-gnu/pkgconfig:/home/li/rtabmap_ws/install/rtabmap/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'li'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/vk_pointcloud/bin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/home/li/rtabmap_ws/install/rtabmap/bin:/opt/vk_pointcloud/bin:/opt/ros/humble/bin:/home/li/miniconda3/condabin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/vk_pointcloud/bin:/home/li/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/opt/vk_pointcloud/bin'), ('SESSION_MANAGER', 'local/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2208,unix/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2208'), ('INVOCATION_ID', 'a293acdaa6dd476c9801ccf85e616cb4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/li/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e986fa5c1f62803e.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/li/.config/Code/User/workspaceStorage/a627f49ee5c917c4a3a6bda4429f68a0/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dfb16e76cc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/li/rtabmap_ws/install/rtabmap_ros:/home/li/rtabmap_ws/install/rtabmap_launch:/home/li/rtabmap_ws/install/rtabmap_examples:/home/li/rtabmap_ws/install/rtabmap_demos:/home/li/rtabmap_ws/install/rtabmap_viz:/home/li/rtabmap_ws/install/rtabmap_slam:/home/li/rtabmap_ws/install/rtabmap_odom:/home/li/rtabmap_ws/install/rtabmap_util:/home/li/rtabmap_ws/install/rtabmap_sync:/home/li/rtabmap_ws/install/rtabmap_rviz_plugins:/home/li/rtabmap_ws/install/rtabmap_python:/home/li/rtabmap_ws/install/rtabmap_conversions:/home/li/rtabmap_ws/install/rtabmap_msgs:/home/li/rtabmap_ws/install/rtabmap_costmap_plugins:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/li/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/li/vk_ros2_ws/build/dual_dense_mapper'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/li/rtabmap_ws/build/rtabmap_python:/home/li/rtabmap_ws/install/rtabmap_python/lib/python3.10/site-packages:/home/li/rtabmap_ws/install/rtabmap_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/li/rtabmap_ws/install/rtabmap_ros:/home/li/rtabmap_ws/install/rtabmap_launch:/home/li/rtabmap_ws/install/rtabmap_examples:/home/li/rtabmap_ws/install/rtabmap_demos:/home/li/rtabmap_ws/install/rtabmap_viz:/home/li/rtabmap_ws/install/rtabmap_slam:/home/li/rtabmap_ws/install/rtabmap_odom:/home/li/rtabmap_ws/install/rtabmap_util:/home/li/rtabmap_ws/install/rtabmap_sync:/home/li/rtabmap_ws/install/rtabmap_rviz_plugins:/home/li/rtabmap_ws/install/rtabmap_conversions:/home/li/rtabmap_ws/install/rtabmap_msgs:/home/li/rtabmap_ws/install/rtabmap_costmap_plugins:/home/li/rtabmap_ws/install/rtabmap')]), 'shell': False}
+[0.056285] (dual_dense_mapper) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099493] (-) TimerEvent: {}
+[0.100456] (dual_dense_mapper) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.106356] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199666] (-) TimerEvent: {}
+[0.204049] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.214647] (dual_dense_mapper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.214973] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.215681] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.220276] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299827] (-) TimerEvent: {}
+[0.355700] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.361160] (dual_dense_mapper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.361520] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.361694] (dual_dense_mapper) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.364760] (dual_dense_mapper) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400006] (-) TimerEvent: {}
+[0.500205] (-) TimerEvent: {}
+[0.510477] (dual_dense_mapper) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.582396] (dual_dense_mapper) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600344] (-) TimerEvent: {}
+[0.617189] (dual_dense_mapper) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.621689] (dual_dense_mapper) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.628452] (dual_dense_mapper) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.637830] (dual_dense_mapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.650710] (dual_dense_mapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.687032] (dual_dense_mapper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.689560] (dual_dense_mapper) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700489] (-) TimerEvent: {}
+[0.797955] (dual_dense_mapper) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.800633] (-) TimerEvent: {}
+[0.829654] (dual_dense_mapper) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.861045] (dual_dense_mapper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.868178] (dual_dense_mapper) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900758] (-) TimerEvent: {}
+[0.940026] (dual_dense_mapper) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.940983] (dual_dense_mapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000892] (-) TimerEvent: {}
+[1.074431] (dual_dense_mapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.076530] (dual_dense_mapper) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.100994] (-) TimerEvent: {}
+[1.116418] (dual_dense_mapper) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.138513] (dual_dense_mapper) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.146695] (dual_dense_mapper) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.201098] (-) TimerEvent: {}
+[1.212785] (dual_dense_mapper) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.224334] (dual_dense_mapper) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.225418] (dual_dense_mapper) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.225469] (dual_dense_mapper) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.228019] (dual_dense_mapper) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.257131] (dual_dense_mapper) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.272803] (dual_dense_mapper) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.301224] (-) TimerEvent: {}
+[1.358385] (dual_dense_mapper) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.358917] (dual_dense_mapper) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.398605] (dual_dense_mapper) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.401311] (-) TimerEvent: {}
+[1.414535] (dual_dense_mapper) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.493288] (dual_dense_mapper) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.493644] (dual_dense_mapper) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.501470] (-) TimerEvent: {}
+[1.601738] (-) TimerEvent: {}
+[1.702014] (-) TimerEvent: {}
+[1.802354] (-) TimerEvent: {}
+[1.903043] (-) TimerEvent: {}
+[2.003561] (-) TimerEvent: {}
+[2.104023] (-) TimerEvent: {}
+[2.204497] (-) TimerEvent: {}
+[2.304828] (-) TimerEvent: {}
+[2.405130] (-) TimerEvent: {}
+[2.505503] (-) TimerEvent: {}
+[2.605867] (-) TimerEvent: {}
+[2.706221] (-) TimerEvent: {}
+[2.733670] (dual_dense_mapper) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.759369] (dual_dense_mapper) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.806332] (-) TimerEvent: {}
+[2.815037] (dual_dense_mapper) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.817254] (dual_dense_mapper) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.906529] (-) TimerEvent: {}
+[2.910253] (dual_dense_mapper) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.006727] (-) TimerEvent: {}
+[3.041143] (dual_dense_mapper) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.045963] (dual_dense_mapper) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.051685] (dual_dense_mapper) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.106926] (-) TimerEvent: {}
+[3.173304] (dual_dense_mapper) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.207030] (-) TimerEvent: {}
+[3.283601] (dual_dense_mapper) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.307129] (-) TimerEvent: {}
+[3.396488] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.397001] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.397565] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.398107] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.398740] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.399155] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.399432] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.399701] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.400329] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.400967] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.401529] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.402129] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.402890] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.403556] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.404123] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.404840] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.405439] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.405970] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.406703] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.407180] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.407257] (-) TimerEvent: {}
+[3.407764] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.407982] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.408225] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.408875] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.409548] (dual_dense_mapper) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.412321] (dual_dense_mapper) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[3.474848] (dual_dense_mapper) StderrLine: {'line': b"Error parsing '/home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml':\n"}
+[3.501804] (dual_dense_mapper) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.501929] (dual_dense_mapper) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[3.502031] (dual_dense_mapper) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[3.502068] (dual_dense_mapper) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString\n'}
+[3.502788] (dual_dense_mapper) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[3.502818] (dual_dense_mapper) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString\n'}
+[3.503462] (dual_dense_mapper) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[3.503494] (dual_dense_mapper) StderrLine: {'line': b'  File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString\n'}
+[3.503521] (dual_dense_mapper) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[3.503587] (dual_dense_mapper) StderrLine: {'line': b'xml.parsers.expat.ExpatError: not well-formed (invalid token): line 5, column 52\n'}
+[3.503616] (dual_dense_mapper) StderrLine: {'line': b'\n'}
+[3.503644] (dual_dense_mapper) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[3.503671] (dual_dense_mapper) StderrLine: {'line': b'\n'}
+[3.503696] (dual_dense_mapper) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.503722] (dual_dense_mapper) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[3.503747] (dual_dense_mapper) StderrLine: {'line': b'    main()\n'}
+[3.503772] (dual_dense_mapper) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[3.503796] (dual_dense_mapper) StderrLine: {'line': b'    raise e\n'}
+[3.503821] (dual_dense_mapper) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[3.503845] (dual_dense_mapper) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[3.503869] (dual_dense_mapper) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[3.503894] (dual_dense_mapper) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[3.503927] (dual_dense_mapper) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml':\n"}
+[3.503953] (dual_dense_mapper) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[3.503977] (dual_dense_mapper) StderrLine: {'line': b'not well-formed (invalid token): line 5, column 52\n'}
+[3.507330] (-) TimerEvent: {}
+[3.514603] (dual_dense_mapper) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[3.514844] (dual_dense_mapper) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[3.514946] (dual_dense_mapper) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[3.515032] (dual_dense_mapper) StderrLine: {'line': b'  /home/li/vk_ros2_ws/src/dual_dense_mapper/package.xml\n'}
+[3.515118] (dual_dense_mapper) StderrLine: {'line': b'  /home/li/vk_ros2_ws/build/dual_dense_mapper/ament_cmake_core/package.cmake)\n'}
+[3.515193] (dual_dense_mapper) StderrLine: {'line': b'  returned error code 1\n'}
+[3.515264] (dual_dense_mapper) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.515336] (dual_dense_mapper) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[3.515406] (dual_dense_mapper) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[3.515479] (dual_dense_mapper) StderrLine: {'line': b'  CMakeLists.txt:31 (ament_package)\n'}
+[3.515551] (dual_dense_mapper) StderrLine: {'line': b'\n'}
+[3.515622] (dual_dense_mapper) StderrLine: {'line': b'\x1b[0m\n'}
+[3.515694] (dual_dense_mapper) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.515776] (dual_dense_mapper) StdoutLine: {'line': b'See also "/home/li/vk_ros2_ws/build/dual_dense_mapper/CMakeFiles/CMakeOutput.log".\n'}
+[3.532314] (dual_dense_mapper) CommandEnded: {'returncode': 1}
+[3.534043] (dual_dense_mapper) JobEnded: {'identifier': 'dual_dense_mapper', 'rc': 1}
+[3.545037] (-) EventReactorShutdown: {}

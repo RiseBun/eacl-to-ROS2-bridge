@@ -1,0 +1,13 @@
+[0.009s] Invoking command in '/home/li/vk_ros2_ws/build/vk_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/li/vk_ros2_ws/build/vk_ros2_driver -- -j20 -l20
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target vk_ros2_driver[0m
+[0.058s] [ 50%] Built target vk_ros2_driver_node
+[0.071s] [ 75%] [32mBuilding CXX object CMakeFiles/vk_ros2_driver.dir/src/vk_ros2_driver.cpp.o[0m
+[2.874s] [01m[K/home/li/vk_ros2_ws/src/vk_ros2_driver/src/vk_ros2_driver.cpp:[m[K In constructor ‘[01m[Kvkc::VkRos2Driver::VkRos2Driver(const rclcpp::NodeOptions&)[m[K’:
+[2.874s] [01m[K/home/li/vk_ros2_ws/src/vk_ros2_driver/src/vk_ros2_driver.cpp:524:103:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_qos[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_msgs[m[K’?
+[2.874s]   524 | _pub_[topic] = this->create_publisher<sensor_msgs::msg::CameraInfo>(topic + "/camera_info", [01;31m[Ksensor_qos[m[K);
+[2.874s]       |                                                                                             [01;31m[K^~~~~~~~~~[m[K
+[2.874s]       |                                                                                             [32m[Ksensor_msgs[m[K
+[4.748s] gmake[2]: *** [CMakeFiles/vk_ros2_driver.dir/build.make:76：CMakeFiles/vk_ros2_driver.dir/src/vk_ros2_driver.cpp.o] 错误 1
+[4.748s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/vk_ros2_driver.dir/all] 错误 2
+[4.748s] gmake: *** [Makefile:146：all] 错误 2
+[4.751s] Invoked command in '/home/li/vk_ros2_ws/build/vk_ros2_driver' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/li/vk_ros2_ws/build/vk_ros2_driver -- -j20 -l20

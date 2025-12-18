@@ -1,0 +1,179 @@
+[0.000000] (-) TimerEvent: {}
+[0.000410] (vk_ros2_driver) JobQueued: {'identifier': 'vk_ros2_driver', 'dependencies': OrderedDict()}
+[0.000759] (vk_ros2_driver) JobStarted: {'identifier': 'vk_ros2_driver'}
+[0.005912] (vk_ros2_driver) JobProgress: {'identifier': 'vk_ros2_driver', 'progress': 'cmake'}
+[0.006708] (vk_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/li/vk_ros2_ws/src/vk_ros2_driver', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/li/vk_ros2_ws/install/vk_ros2_driver'], 'cwd': '/home/li/vk_ros2_ws/build/vk_ros2_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'li'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/li'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/li/vk_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.106.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1901'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2228'), ('BUNDLED_DEBUGPY_PATH', '/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/li/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6007'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/li/vk_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'li'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:26625'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'li'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/vk_pointcloud/bin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/opt/vk_pointcloud/bin:/opt/ros/humble/bin:/home/li/miniconda3/condabin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/vk_pointcloud/bin:/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts:/opt/vk_pointcloud/bin'), ('SESSION_MANAGER', 'local/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2201,unix/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2201'), ('INVOCATION_ID', '278d91606995466e839d4e1a76578060'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-e986fa5c1f62803e.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/li/.config/Code/User/workspaceStorage/a627f49ee5c917c4a3a6bda4429f68a0/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dfb16e76cc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/li/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/li/vk_ros2_ws/build/vk_ros2_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.021449] (vk_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099938] (-) TimerEvent: {}
+[0.112082] (vk_ros2_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.116584] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.141739] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.143390] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.147250] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.153646] (vk_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.161589] (vk_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.183586] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.184495] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200172] (-) TimerEvent: {}
+[0.267196] (vk_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.300301] (-) TimerEvent: {}
+[0.302295] (vk_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.313878] (vk_ros2_driver) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.322028] (vk_ros2_driver) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.332925] (vk_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.343851] (vk_ros2_driver) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.346053] (vk_ros2_driver) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.384618] (vk_ros2_driver) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.386685] (vk_ros2_driver) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.387628] (vk_ros2_driver) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.388491] (vk_ros2_driver) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.394155] (vk_ros2_driver) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.400438] (-) TimerEvent: {}
+[0.406985] (vk_ros2_driver) StdoutLine: {'line': b'-- Found stereo_msgs: 4.9.0 (/opt/ros/humble/share/stereo_msgs/cmake)\n'}
+[0.477552] (vk_ros2_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.487964] (vk_ros2_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[0.491689] (vk_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/li/vk_ros2_ws/build/vk_ros2_driver\n'}
+[0.497585] (vk_ros2_driver) CommandEnded: {'returncode': 0}
+[0.497976] (vk_ros2_driver) JobProgress: {'identifier': 'vk_ros2_driver', 'progress': 'build'}
+[0.498419] (vk_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/li/vk_ros2_ws/build/vk_ros2_driver', '--', '-j20', '-l20'], 'cwd': '/home/li/vk_ros2_ws/build/vk_ros2_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'li'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/li'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/li/vk_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.106.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1901'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2228'), ('BUNDLED_DEBUGPY_PATH', '/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/li/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6007'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/li/vk_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'li'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:26625'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'li'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/vk_pointcloud/bin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/opt/vk_pointcloud/bin:/opt/ros/humble/bin:/home/li/miniconda3/condabin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/vk_pointcloud/bin:/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts:/opt/vk_pointcloud/bin'), ('SESSION_MANAGER', 'local/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2201,unix/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2201'), ('INVOCATION_ID', '278d91606995466e839d4e1a76578060'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-e986fa5c1f62803e.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/li/.config/Code/User/workspaceStorage/a627f49ee5c917c4a3a6bda4429f68a0/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dfb16e76cc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/li/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/li/vk_ros2_ws/build/vk_ros2_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.500528] (-) TimerEvent: {}
+[0.542773] (vk_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vk_ros2_driver_node\x1b[0m\n'}
+[0.542972] (vk_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vk_ros2_driver\x1b[0m\n'}
+[0.555225] (vk_ros2_driver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/vk_ros2_driver_node.dir/rclcpp_components/node_main_vk_ros2_driver_node.cpp.o\x1b[0m\n'}
+[0.560204] (vk_ros2_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vk_ros2_driver.dir/src/vk_ros2_driver.cpp.o\x1b[0m\n'}
+[0.600616] (-) TimerEvent: {}
+[0.700868] (-) TimerEvent: {}
+[0.801118] (-) TimerEvent: {}
+[0.901404] (-) TimerEvent: {}
+[1.001646] (-) TimerEvent: {}
+[1.101926] (-) TimerEvent: {}
+[1.202201] (-) TimerEvent: {}
+[1.302474] (-) TimerEvent: {}
+[1.402721] (-) TimerEvent: {}
+[1.503009] (-) TimerEvent: {}
+[1.603241] (-) TimerEvent: {}
+[1.703514] (-) TimerEvent: {}
+[1.803761] (-) TimerEvent: {}
+[1.904035] (-) TimerEvent: {}
+[2.004315] (-) TimerEvent: {}
+[2.104594] (-) TimerEvent: {}
+[2.204830] (-) TimerEvent: {}
+[2.305105] (-) TimerEvent: {}
+[2.405377] (-) TimerEvent: {}
+[2.505655] (-) TimerEvent: {}
+[2.605883] (-) TimerEvent: {}
+[2.692133] (vk_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable vk_ros2_driver_node\x1b[0m\n'}
+[2.705997] (-) TimerEvent: {}
+[2.772930] (vk_ros2_driver) StdoutLine: {'line': b'[ 75%] Built target vk_ros2_driver_node\n'}
+[2.806087] (-) TimerEvent: {}
+[2.906351] (-) TimerEvent: {}
+[3.006778] (-) TimerEvent: {}
+[3.107065] (-) TimerEvent: {}
+[3.207406] (-) TimerEvent: {}
+[3.307651] (-) TimerEvent: {}
+[3.407881] (-) TimerEvent: {}
+[3.508106] (-) TimerEvent: {}
+[3.608393] (-) TimerEvent: {}
+[3.708647] (-) TimerEvent: {}
+[3.808874] (-) TimerEvent: {}
+[3.909143] (-) TimerEvent: {}
+[4.009421] (-) TimerEvent: {}
+[4.109733] (-) TimerEvent: {}
+[4.210086] (-) TimerEvent: {}
+[4.310446] (-) TimerEvent: {}
+[4.410842] (-) TimerEvent: {}
+[4.511127] (-) TimerEvent: {}
+[4.611475] (-) TimerEvent: {}
+[4.711862] (-) TimerEvent: {}
+[4.812210] (-) TimerEvent: {}
+[4.912563] (-) TimerEvent: {}
+[5.012904] (-) TimerEvent: {}
+[5.113192] (-) TimerEvent: {}
+[5.213444] (-) TimerEvent: {}
+[5.313798] (-) TimerEvent: {}
+[5.414067] (-) TimerEvent: {}
+[5.514404] (-) TimerEvent: {}
+[5.614720] (-) TimerEvent: {}
+[5.715083] (-) TimerEvent: {}
+[5.815364] (-) TimerEvent: {}
+[5.915711] (-) TimerEvent: {}
+[6.016054] (-) TimerEvent: {}
+[6.116374] (-) TimerEvent: {}
+[6.216720] (-) TimerEvent: {}
+[6.316960] (-) TimerEvent: {}
+[6.417218] (-) TimerEvent: {}
+[6.517494] (-) TimerEvent: {}
+[6.617772] (-) TimerEvent: {}
+[6.718079] (-) TimerEvent: {}
+[6.818383] (-) TimerEvent: {}
+[6.918616] (-) TimerEvent: {}
+[7.018864] (-) TimerEvent: {}
+[7.119099] (-) TimerEvent: {}
+[7.219331] (-) TimerEvent: {}
+[7.319599] (-) TimerEvent: {}
+[7.419846] (-) TimerEvent: {}
+[7.520104] (-) TimerEvent: {}
+[7.620377] (-) TimerEvent: {}
+[7.720606] (-) TimerEvent: {}
+[7.820825] (-) TimerEvent: {}
+[7.921085] (-) TimerEvent: {}
+[8.021343] (-) TimerEvent: {}
+[8.121616] (-) TimerEvent: {}
+[8.221833] (-) TimerEvent: {}
+[8.322094] (-) TimerEvent: {}
+[8.422313] (-) TimerEvent: {}
+[8.522668] (-) TimerEvent: {}
+[8.622893] (-) TimerEvent: {}
+[8.723225] (-) TimerEvent: {}
+[8.823568] (-) TimerEvent: {}
+[8.923793] (-) TimerEvent: {}
+[9.024024] (-) TimerEvent: {}
+[9.124294] (-) TimerEvent: {}
+[9.224576] (-) TimerEvent: {}
+[9.324808] (-) TimerEvent: {}
+[9.425058] (-) TimerEvent: {}
+[9.525276] (-) TimerEvent: {}
+[9.625499] (-) TimerEvent: {}
+[9.725735] (-) TimerEvent: {}
+[9.825980] (-) TimerEvent: {}
+[9.926291] (-) TimerEvent: {}
+[10.026540] (-) TimerEvent: {}
+[10.126790] (-) TimerEvent: {}
+[10.227064] (-) TimerEvent: {}
+[10.327371] (-) TimerEvent: {}
+[10.375291] (vk_ros2_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libvk_ros2_driver.so\x1b[0m\n'}
+[10.427496] (-) TimerEvent: {}
+[10.527782] (-) TimerEvent: {}
+[10.537422] (vk_ros2_driver) StdoutLine: {'line': b'[100%] Built target vk_ros2_driver\n'}
+[10.549731] (vk_ros2_driver) CommandEnded: {'returncode': 0}
+[10.550364] (vk_ros2_driver) JobProgress: {'identifier': 'vk_ros2_driver', 'progress': 'install'}
+[10.560357] (vk_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/li/vk_ros2_ws/build/vk_ros2_driver'], 'cwd': '/home/li/vk_ros2_ws/build/vk_ros2_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'li'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/li'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/li/vk_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.106.2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1901'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2228'), ('BUNDLED_DEBUGPY_PATH', '/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/li/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6007'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/li/vk_ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'li'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:26625'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'li'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/vk_pointcloud/bin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/opt/vk_pointcloud/bin:/opt/ros/humble/bin:/home/li/miniconda3/condabin:/home/li/.local/bin:/opt/vilota/bin:/home/li/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/vk_pointcloud/bin:/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts:/opt/vk_pointcloud/bin'), ('SESSION_MANAGER', 'local/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/2201,unix/li-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/2201'), ('INVOCATION_ID', '278d91606995466e839d4e1a76578060'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/li/.vscode/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-e986fa5c1f62803e.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/li/.config/Code/User/workspaceStorage/a627f49ee5c917c4a3a6bda4429f68a0/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dfb16e76cc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/li/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/li/vk_ros2_ws/build/vk_ros2_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/li/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/li/vk_ros2_ws/install/vk_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[10.572732] (vk_ros2_driver) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.573252] (vk_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.573470] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/lib/vk_ros2_driver/vk_ros2_driver_node\n'}
+[10.573783] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/include/vk_ros2_driver/vk_ros2_driver/vk_ros2_driver.hpp\n'}
+[10.574048] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/__pycache__/loop_closure_and_tsdf.launch.cpython-310.pyc\n'}
+[10.574130] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/launch/example.launch.py\n'}
+[10.574301] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/config/example.yaml\n'}
+[10.574448] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/package_run_dependencies/vk_ros2_driver\n'}
+[10.574577] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/parent_prefix_path/vk_ros2_driver\n'}
+[10.574703] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/ament_prefix_path.sh\n'}
+[10.574812] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[10.574922] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/path.sh\n'}
+[10.575024] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/environment/path.dsv\n'}
+[10.575127] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.bash\n'}
+[10.575229] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.sh\n'}
+[10.575327] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.zsh\n'}
+[10.575423] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/local_setup.dsv\n'}
+[10.575495] (vk_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/package.dsv\n'}
+[10.586970] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/packages/vk_ros2_driver\n'}
+[10.587130] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/ament_index/resource_index/rclcpp_components/vk_ros2_driver\n'}
+[10.587178] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.587245] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/vk_ros2_driverConfig.cmake\n'}
+[10.587308] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/cmake/vk_ros2_driverConfig-version.cmake\n'}
+[10.587365] (vk_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/li/vk_ros2_ws/install/vk_ros2_driver/share/vk_ros2_driver/package.xml\n'}
+[10.587544] (vk_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/li/vk_ros2_ws/install/vk_ros2_driver/lib/libvk_ros2_driver.so\n'}
+[10.588315] (vk_ros2_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/li/vk_ros2_ws/install/vk_ros2_driver/lib/libvk_ros2_driver.so" to "/opt/vilota/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"\n'}
+[10.590148] (vk_ros2_driver) CommandEnded: {'returncode': 0}
+[10.603591] (vk_ros2_driver) JobEnded: {'identifier': 'vk_ros2_driver', 'rc': 0}
+[10.604269] (-) EventReactorShutdown: {}
