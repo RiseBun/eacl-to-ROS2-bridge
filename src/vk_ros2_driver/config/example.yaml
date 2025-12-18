@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    publish_tf: true
+    odometry_frame: odom
+    base_link_frame: base_link
+
+    ## optional parameters
+    imu_topics:
+    - S1/imu
+    odometry_topics:
+    - S1/vio_odom
+    image_topics:
+    - S1/camd
+    - S1/stereo1_l
+    - S1/stereo2_r
+    disparity_topics:
+    - S1/stereo1_l/disparity
+    - S1/stereo2_r/disparity
