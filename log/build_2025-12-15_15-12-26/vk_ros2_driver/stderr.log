@@ -1,8 +1,0 @@
-[01m[K/home/li/vk_ros2_ws/src/vk_ros2_driver/src/vk_ros2_driver.cpp:[m[K In constructor ‘[01m[Kvkc::VkRos2Driver::VkRos2Driver(const rclcpp::NodeOptions&)[m[K’:
-[01m[K/home/li/vk_ros2_ws/src/vk_ros2_driver/src/vk_ros2_driver.cpp:524:103:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_qos[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_msgs[m[K’?
-  524 | _pub_[topic] = this->create_publisher<sensor_msgs::msg::CameraInfo>(topic + "/camera_info", [01;31m[Ksensor_qos[m[K);
-      |                                                                                             [01;31m[K^~~~~~~~~~[m[K
-      |                                                                                             [32m[Ksensor_msgs[m[K
-gmake[2]: *** [CMakeFiles/vk_ros2_driver.dir/build.make:76：CMakeFiles/vk_ros2_driver.dir/src/vk_ros2_driver.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/vk_ros2_driver.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

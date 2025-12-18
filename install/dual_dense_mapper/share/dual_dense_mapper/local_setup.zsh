@@ -1,1 +1,0 @@
-/home/li/vk_ros2_ws/build/dual_dense_mapper/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,1 +1,0 @@
-rclcpp;rclcpp_components;geometry_msgs;sensor_msgs;std_msgs;std_srvs;nav_msgs;tf2_ros;tf2_geometry_msgs;cv_bridge;image_transport;stereo_msgs;nlohmann-json3-dev
