@@ -12,6 +12,10 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <Eigen/Geometry>
 
+// 必须包含 QoS 相关的头文件
+#include <rclcpp/qos.hpp>
+#include <rmw/qos_profiles.h>
+
 namespace vkc
 {
 using nlohmann::json;
@@ -160,8 +164,6 @@ vkc::ReceiverStatus ImuReceiver::handle(const vkc::Message<vkc::Shared<vkc::Imu>
     sensor_msgs::msg::Imu imu_ros_message;
     auto imu = message.payload.reader();
     
-    // 【核心修改】使用 driver_.stamp_from() 进行时间同步
-    // 自动适配实时（System Time）或回放（Loop Reset）
     imu_ros_message.header.stamp = driver_.stamp_from(imu.getHeader());
     imu_ros_message.header.frame_id = frame_id_;
 
@@ -188,7 +190,6 @@ vkc::ReceiverStatus OdometryReceiver::handle(const vkc::Message<vkc::Shared<vkc:
     nav_msgs::msg::Odometry odometry_ros_message;
     auto odometry = message.payload.reader();
     
-    // 【核心修改】使用 stamp_from
     odometry_ros_message.header.stamp = driver_.stamp_from(odometry.getHeader());
     odometry_ros_message.header.frame_id = driver_.odom_frame_; 
     odometry_ros_message.child_frame_id = driver_.base_link_frame_;
@@ -222,7 +223,7 @@ vkc::ReceiverStatus OdometryReceiver::handle(const vkc::Message<vkc::Shared<vkc:
     
     pub_->publish(odometry_ros_message);
 
-    // 动态 TF 广播 (Odom -> Base_link)
+    // TF
     if (driver_.publish_tf_) {
         geometry_msgs::msg::TransformStamped odom_tf;
         odom_tf.header.stamp = odometry_ros_message.header.stamp;
@@ -245,7 +246,6 @@ vkc::ReceiverStatus ImageReceiver::handle(const vkc::Message<vkc::Shared<vkc::Im
     auto image = message.payload.reader();
     std_msgs::msg::Header header;
     
-    // 【核心修改】使用 stamp_from
     header.stamp = driver_.stamp_from(image.getHeader());
     header.frame_id = topic_name_; 
     
@@ -275,7 +275,7 @@ vkc::ReceiverStatus ImageReceiver::handle(const vkc::Message<vkc::Shared<vkc::Im
         imageMat = cv::Mat(imageHeight, imageWidth, CV_8UC3,
                             const_cast<unsigned char *>(image.getData().asBytes().begin()));
         imageMat = imageMat.reshape(1, imageHeight);
-        cv::cvtColor(imageMat, imageMat, cv::COLOR_BGR2RGB);
+        // 【关键修复】不做转换，保留 BGR，与编码 "bgr8" 匹配
         break;
     case vkc::Image::Encoding::JPEG:
         imageMat = cv::imdecode(cv::Mat(1, imageSize, CV_8UC1,
@@ -314,8 +314,10 @@ vkc::ReceiverStatus ImageReceiver::handle(const vkc::Message<vkc::Shared<vkc::Im
        } else {
          ci.distortion_model = "plumb_bob";
          ci.d = {0, 0, 0, 0, 0};
-         ci.r = {1,0,0, 0,1,0, 0,0,1};
        }
+       
+       // 【关键建议】显式初始化 R 为单位阵
+       ci.r = {1,0,0, 0,1,0, 0,0,1};
 
        ci.p[0] = fx; ci.p[1] = 0;  ci.p[2] = cx; ci.p[3]  = 0;
        ci.p[4] = 0;  ci.p[5] = fy; ci.p[6] = cy; ci.p[7]  = 0;
@@ -336,11 +338,14 @@ vkc::ReceiverStatus ImageReceiver::handle(const vkc::Message<vkc::Shared<vkc::Im
 }
 
 // ---------------------- DisparityReceiver ----------------------
+// 【优化】构造函数传值，初始化成员对象
 DisparityReceiver::DisparityReceiver(const VkRos2Driver &driver,
-                                     image_transport::Publisher &pub,
+                                     image_transport::Publisher pub,
+                                     image_transport::Publisher pub_mm,
                                      const std::string &topic_name)
   : driver_(driver),
     pub_(pub),
+    pub_mm_(pub_mm),
     topic_name_(topic_name),
     disparity_scale_(32.0)
 {
@@ -360,58 +365,92 @@ DisparityReceiver::DisparityReceiver(const VkRos2Driver &driver,
 
 vkc::ReceiverStatus DisparityReceiver::handle(const vkc::Message<vkc::Shared<vkc::Disparity>> &message) {
     auto d = message.payload.reader();
-    const int H = static_cast<int>(d.getHeight());
-    const int W = static_cast<int>(d.getWidth());
+    const int src_H = static_cast<int>(d.getHeight());
+    const int src_W = static_cast<int>(d.getWidth());
 
     StereoCalib C;
-    // 快速检查，避免无效计算
     if (!driver_.calib().get(clean_key_, C) || !C.valid || C.baseline <= 1e-6) {
         return vkc::ReceiverStatus::Open;
     }
 
-    // 1. 获取原始数据 (Zero Copy if possible)
+    // 1. 获取 Disparity 数据
     int src_type = (d.getEncoding() == Disparity::Encoding::DISPARITY8) ? CV_8UC1 : CV_16UC1;
-    // const_cast 是为了适配 cv::Mat 构造函数，但我们只读
-    cv::Mat disp_raw(H, W, src_type, const_cast<unsigned char*>(d.getData().asBytes().begin()));
+    cv::Mat disp_raw(src_H, src_W, src_type, const_cast<unsigned char*>(d.getData().asBytes().begin()));
 
-    // 2. 准备转换参数
     const float fx_B = static_cast<float>(C.fx * C.baseline);
     const float scale = disparity_scale_;
 
     cv::Mat disp_f;
-    cv::Mat depth;
+    cv::Mat depth_meters;
 
-    // 3. 【核心优化】使用矩阵运算代替 for 循环
-    // 将原始数据转换为 float 并缩放
     if (src_type == CV_8UC1) {
         disp_raw.convertTo(disp_f, CV_32FC1, 1.0 / scale);
     } else {
         disp_raw.convertTo(disp_f, CV_32FC1, 1.0 / scale);
     }
 
-    // 处理无效视差 (防止除以0)
-    // 将极小值替换为非零值 (或者无穷大，看需求，这里设为 0.001 避免除零错误)
-    // 更好的做法是利用 mask
+    // =================================================================================
+    // 【Bug Fix 1】Invalid Mask 计算顺序修复
+    // 先计算 Mask (小于阈值认为无效)，然后再做 max 截断
+    // =================================================================================
     cv::Mat invalid_mask = (disp_f < 1e-6f); 
     
-    // 加上一个极小值防止除零 (OpenCV divide 处理除零会有特殊行为，但这样更稳健)
+    // 防止除零
     cv::max(disp_f, 1e-6f, disp_f);
+    
+    // 计算深度 (Meters)
+    cv::divide(fx_B, disp_f, depth_meters);
 
-    // 矩阵除法: depth = (fx * B) / disp
-    // OpenCV 会自动调用底层的指令集优化 (AVX2/SSE)
-    cv::divide(fx_B, disp_f, depth);
+    // 将无效区域置 0
+    depth_meters.setTo(0.0f, invalid_mask);
 
-    // 将无效区域的深度设为 0
-    depth.setTo(0.0f, invalid_mask);
+    // =================================================================================
+    // 2. Resize to Color Resolution
+    // =================================================================================
+    cv::Mat depth_final_meters;
+    
+    if (C.width > 0 && C.height > 0 && (src_W != C.width || src_H != C.height)) {
+        cv::resize(depth_meters, depth_final_meters, cv::Size(C.width, C.height), 0, 0, cv::INTER_NEAREST);
+    } else {
+        depth_final_meters = depth_meters;
+    }
 
-    // 4. 发布消息
+    // 准备 Header
     std_msgs::msg::Header header;
     header.stamp = driver_.stamp_from(d.getHeader());
     header.frame_id = camera_frame_;
 
-    // 使用 toImageMsg 的移动语义 (如果 cv_bridge 版本支持) 或者共享指针
-    auto img_msg = cv_bridge::CvImage(header, "32FC1", depth).toImageMsg();
-    pub_.publish(*img_msg);
+    // =================================================================================
+    // 3. 发布 32FC1 (Meters)
+    // =================================================================================
+    auto msg_float = cv_bridge::CvImage(header, "32FC1", depth_final_meters).toImageMsg();
+    pub_.publish(*msg_float);
+
+    // =================================================================================
+    // 4. 发布 16UC1 (Millimeters)
+    // =================================================================================
+    cv::Mat depth_mm;
+    {
+        // =============================================================================
+        // 【Bug Fix 2】废弃 unsafe 的 copyTo，改用 clone + setTo(0) 处理 NaN
+        // =============================================================================
+        cv::Mat depth_safe = depth_final_meters.clone();
+        
+        // 检查 NaN/Inf
+        cv::Mat finite_mask = (depth_safe == depth_safe); // NaN != NaN -> False
+        
+        // 将 NaN 区域置 0
+        depth_safe.setTo(0.0f, ~finite_mask);
+
+        // 截断过远距离 (防止溢出 uint16)
+        cv::min(depth_safe, 65.535f, depth_safe);
+
+        // 转换
+        depth_safe.convertTo(depth_mm, CV_16UC1, 1000.0);
+    }
+
+    auto msg_u16 = cv_bridge::CvImage(header, "16UC1", depth_mm).toImageMsg();
+    pub_mm_.publish(*msg_u16);
 
     return vkc::ReceiverStatus::Open;
 }
@@ -420,7 +459,7 @@ vkc::ReceiverStatus DisparityReceiver::handle(const vkc::Message<vkc::Shared<vkc
 // Driver Node
 // =================================================================================
 
-// 【关键】实现静态 TF 发布逻辑
+// publish_static_extrinsics_from_saved 函数保持不变...
 void VkRos2Driver::publish_static_extrinsics_from_saved(const std::string& saved_path)
 {
     std::ifstream f(saved_path);
@@ -435,38 +474,25 @@ void VkRos2Driver::publish_static_extrinsics_from_saved(const std::string& saved
         RCLCPP_ERROR(get_logger(), "Failed to parse saved_calib JSON: %s", e.what());
         return;
     }
-
     if (!j.contains("value0")) return;
     auto& v = j["value0"];
-
-    // 解析 T_imu_body (Body -> IMU 逆变换)
     Eigen::Isometry3d T_imu_body = parse_T(v["T_imu_body"]);
     Eigen::Isometry3d T_body_imu = T_imu_body.inverse();
-
     std::vector<geometry_msgs::msg::TransformStamped> static_transforms;
     auto cam_names = v["cam_names"];
     auto T_imu_cams = v["T_imu_cam"];
 
     for (size_t i = 0; i < cam_names.size() && i < T_imu_cams.size(); ++i) {
         std::string raw_name = cam_names[i].get<std::string>();
-        // 清洗 frame 名: "S1/camd/hfflow" -> "S1/camd"
         std::string child_frame = clean_frame_name(raw_name); 
-        
-        // 解析 T_IC (IMU -> Cam)
         Eigen::Isometry3d T_imu_cam = parse_T(T_imu_cams[i]);
-        
-        // 计算 T_Body_Cam = T_Body_IMU * T_IMU_Cam
         Eigen::Isometry3d T_body_cam = T_body_imu * T_imu_cam;
-
-        // 构建 TF 消息
         geometry_msgs::msg::TransformStamped t;
         t.header.stamp = this->now(); 
-        t.header.frame_id = base_link_frame_; // "base_link"
-        t.child_frame_id = child_frame;       // e.g. "S1/camd"
-        
+        t.header.frame_id = base_link_frame_; 
+        t.child_frame_id = child_frame;       
         Eigen::Vector3d trans = T_body_cam.translation();
         Eigen::Quaterniond rot(T_body_cam.rotation());
-        
         t.transform.translation.x = trans.x();
         t.transform.translation.y = trans.y();
         t.transform.translation.z = trans.z();
@@ -474,17 +500,13 @@ void VkRos2Driver::publish_static_extrinsics_from_saved(const std::string& saved
         t.transform.rotation.y = rot.y();
         t.transform.rotation.z = rot.z();
         t.transform.rotation.w = rot.w();
-
         static_transforms.push_back(t);
         RCLCPP_INFO(get_logger(), "Static TF: %s -> %s", base_link_frame_.c_str(), child_frame.c_str());
     }
-
     if (!static_transforms.empty()) {
         static_tf_pub_->sendTransform(static_transforms);
     }
 }
-
-// 在 vk_ros2_driver.cpp 中
 
 VkRos2Driver::VkRos2Driver(const rclcpp::NodeOptions &options)
     : Node("vk_ros2_driver", options),
@@ -524,28 +546,37 @@ VkRos2Driver::VkRos2Driver(const rclcpp::NodeOptions &options)
     vkc::installLoggingCallback(std::bind(
         &vkc::VkRos2Driver::log_cb, this, std::placeholders::_1, std::placeholders::_2));
 
-    // 定义 Best Effort QoS (用于普通 Publisher)
-    rclcpp::QoS qos_best_effort(rclcpp::KeepLast(5));
-    qos_best_effort.best_effort();
-    qos_best_effort.durability_volatile();
+    // =================================================================================
+    // 【QoS】Reliable
+    // =================================================================================
+    
+    // ImageTransport Profile
+    rmw_qos_profile_t qos_image_reliable = rmw_qos_profile_sensor_data;
+    qos_image_reliable.reliability = RMW_QOS_POLICY_RELIABILITY_RELIABLE;
+    qos_image_reliable.history     = RMW_QOS_POLICY_HISTORY_KEEP_LAST;
+    qos_image_reliable.depth       = 10;
+    qos_image_reliable.durability  = RMW_QOS_POLICY_DURABILITY_VOLATILE;
+
+    // Standard Publisher Profile
+    rclcpp::QoS qos_reliable(rclcpp::KeepLast(10));
+    qos_reliable.reliable();
+    qos_reliable.durability_volatile();
 
     for (const auto& topic : imu_topics) {
-        imu_pub_[topic] = this->create_publisher<sensor_msgs::msg::Imu>(topic, qos_best_effort);
+        imu_pub_[topic] = this->create_publisher<sensor_msgs::msg::Imu>(topic, qos_reliable);
         visualkit->source().install(topic, std::make_unique<vkc::ImuReceiver>(
             *this, imu_pub_[topic], topic));
     }
     for (const auto& topic : odometry_topics) {
-        odom_pub_[topic] = this->create_publisher<nav_msgs::msg::Odometry>(topic, qos_best_effort);
+        odom_pub_[topic] = this->create_publisher<nav_msgs::msg::Odometry>(topic, qos_reliable);
         visualkit->source().install(topic, std::make_unique<vkc::OdometryReceiver>(
             *this, odom_pub_[topic]));
     }
     for (const auto& topic : image_topics) {
-        // 【修复点 1】去掉中间的 '10'，直接传入 QoS Profile
-        // rmw_qos_profile_sensor_data 默认包含 Best Effort 和 Depth=5
-        img_pub_[topic] = it_.advertise(topic, rmw_qos_profile_sensor_data);
+        img_pub_[topic] = it_.advertise(topic, qos_image_reliable);
         
         ci_pub_[topic] = this->create_publisher<sensor_msgs::msg::CameraInfo>(
-            topic + "/camera_info", qos_best_effort);
+            topic + "/camera_info", qos_reliable);
         
         std::string clean_key = clean_topic_name(topic);
         visualkit->source().install(topic, std::make_unique<vkc::ImageReceiver>(
@@ -561,14 +592,21 @@ VkRos2Driver::VkRos2Driver(const rclcpp::NodeOptions &options)
             depth_topic += "/depth";
         }
 
-        // 【修复点 2】深度图也建议开启 Best Effort，同样去掉 '10'
-        disp_pub_[topic] = it_.advertise(depth_topic, rmw_qos_profile_sensor_data);
+        // 1. Meters (32FC1)
+        disp_pub_[topic] = it_.advertise(depth_topic, qos_image_reliable);
         
+        // 2. Millimeters (16UC1)
+        std::string depth_topic_mm = depth_topic + "_mm";
+        disp_pub_mm_[topic] = it_.advertise(depth_topic_mm, qos_image_reliable); // 这里会用到头文件里的 map 定义
+
         visualkit->source().install(topic, std::make_unique<vkc::DisparityReceiver>(
-            *this, disp_pub_[topic], topic));
+            *this, 
+            disp_pub_[topic], 
+            disp_pub_mm_[topic], 
+            topic));
             
-        RCLCPP_INFO(get_logger(), "[Depth] Publishing depth to %s (source: %s)", 
-            depth_topic.c_str(), topic.c_str());
+        RCLCPP_INFO(get_logger(), "[Depth] Publishing:\n  Float(m): %s\n  Uint16(mm): %s", 
+            depth_topic.c_str(), depth_topic_mm.c_str());
     }
     visualkit->source().start();
 }
